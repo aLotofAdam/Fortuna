@@ -12,7 +12,7 @@ Built with Java, Eclipse, and using the PDFbox library.
 
 ## About This Project:
 Keeping track of where your hard-earned money disappears to can be challenging. This application is being built for people who want to get 
-a handle on their budget without spending hours every week inputting reciepts into a spreadsheet or giving other software programs access
+a handle on their budget without spending hours every week inputting receipts into a spreadsheet or giving other software programs access
 to their bank accounts. <br/>
 
 This project is still in earlier phases of development. Check back for more info and updates!
