@@ -15,6 +15,7 @@ public class PdfParser {
 		ArrayList<String> listOfDates = new ArrayList<String>();
 		ArrayList<String> listOfDescriptions = new ArrayList<String>();
 		ArrayList<String> listOfAmounts = new ArrayList<String>();
+		ArrayList<String> listOfCategories = new ArrayList<String>();
 		
 		FileDialog dialog = new FileDialog((Frame)null, "Select PDF file to open");
 		dialog.setMode(FileDialog.LOAD);
@@ -35,6 +36,9 @@ public class PdfParser {
 		
 		Delimiter delimiter = new Delimiter();
 		Delimiter.delimiter(statement, listOfDates, listOfDescriptions, listOfAmounts);
+		
+		Categorizer categorizer = new Categorizer();
+		categorizer.categorize(listOfDescriptions, listOfCategories);
 		
 		if (listOfDates.size() == listOfDescriptions.size() && 
 				listOfDescriptions.size() == listOfAmounts.size()) {

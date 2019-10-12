@@ -36,59 +36,5 @@ public class Delimiter {
 			listOfDescriptions.add(description);
 			listOfAmounts.add(amount);
 		}
-		
-		//return statement;
 	}	
-	/*
-	
-		
-		
-		 * Year
-				Income
-					DEPOSIT
-					Paycheck
-					OtherIncome
-				SAVINGS
-			
-				Expense
-					Food
-						Groceries
-						Eating out
-					
-					Gas
-					
-					Bills_Utilities
-						Energy
-							FileName
-								Transaction
-									Date
-									Description
-									Amount
-						
-						Garbage
-						
-						Water
-						
-						Cable/Internet
-						
-						Phone
-						
-						Rent/mortgage
-						
-						Car/insurance
-						
-						CreditCard
-			
-					Shopping
-					
-					Entertainment
-					
-					OtherExpenses
-						
-				Ignore
-			
-			
-				Unknown
-		 
-	}*/
 }

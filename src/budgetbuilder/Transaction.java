@@ -25,6 +25,7 @@ public class Transaction {
 			transactions[0][i] = listOfDates.get(i);
 			transactions[1][i] = listOfDescriptions.get(i);
 			transactions[2][i] = listOfAmounts.get(i);
+			Categorizer.categorize(transactions[1][i]);
 			//transactions[3][i] = listOfCategories.get(i);
 		}
 	}
