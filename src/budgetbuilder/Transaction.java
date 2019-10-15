@@ -19,14 +19,16 @@ public class Transaction {
 		//String[][] transactions = new String[5][size];
 		this.numOfTransactions = size;
 		this.fileName = fileName;
+		//Categorizer categorize = new Categorizer();
 		
 		for (int i = 0; i < numOfTransactions; i++) {
 			//transactions[0][i] = fileName;
 			transactions[0][i] = listOfDates.get(i);
 			transactions[1][i] = listOfDescriptions.get(i);
 			transactions[2][i] = listOfAmounts.get(i);
-			Categorizer.categorize(transactions[1][i]);
+			transactions[3][i] = Categorizer.categorize(transactions[1][i]);
 			//transactions[3][i] = listOfCategories.get(i);
+			//System.out.println("Transactions index: " + i);
 		}
 	}
 	
@@ -34,7 +36,8 @@ public class Transaction {
 		for (int i = 0; i < numOfTransactions; i++) {
 			System.out.println("File Name: " + fileName);
 			System.out.println("Date: " + transactions[0][i] + " " + 
-			"Description: " + transactions[1][i] + " " + "Amount: " + transactions[2][i]);
+			"Description: " + transactions[1][i] + " " + "Amount: " + transactions[2][i] + " " +
+					"Category: " + transactions[3][i]);
 		}
 	}
 	public void buildStatement() {

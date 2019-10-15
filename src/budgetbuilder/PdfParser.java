@@ -37,8 +37,8 @@ public class PdfParser {
 		Delimiter delimiter = new Delimiter();
 		Delimiter.delimiter(statement, listOfDates, listOfDescriptions, listOfAmounts);
 		
-		Categorizer categorizer = new Categorizer();
-		categorizer.categorize(listOfDescriptions, listOfCategories);
+		//Categorizer categorizer = new Categorizer();
+		//categorizer.categorize(listOfDescriptions, listOfCategories);
 		
 		if (listOfDates.size() == listOfDescriptions.size() && 
 				listOfDescriptions.size() == listOfAmounts.size()) {
