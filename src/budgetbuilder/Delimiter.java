@@ -34,7 +34,7 @@ public class Delimiter {
 			
 			listOfDates.add(date);
 			listOfDescriptions.add(description);
-			listOfAmounts.add(amount);
+			listOfAmounts.add(amount.replaceAll(",", ""));
 		}
 	}	
 }

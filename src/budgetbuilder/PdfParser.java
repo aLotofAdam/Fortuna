@@ -50,6 +50,10 @@ public class PdfParser {
 					listOfDates, listOfDescriptions, listOfAmounts);
 			
 			newTransaction.printTransactions(transactions);
+			
+			BuildBudget builder = new BuildBudget();
+			builder.analyze(transactions, size);
+			builder.printBudget(transactions[0][0], transactions[0][size - 1]);
 		}
 		
 		

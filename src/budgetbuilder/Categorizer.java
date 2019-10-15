@@ -76,7 +76,7 @@ public class Categorizer {
 			}
 			if (i < car_insurance.length) {
 				if (s.contains(car_insurance[i])) {
-					category = "Car Insurance";
+					category = "Car/Insurance";
 					matched = true;
 					return category;
 				}
